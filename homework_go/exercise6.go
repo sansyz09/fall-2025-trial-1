@@ -4,6 +4,13 @@ package main
 // Factorial of n is n! = n × (n-1) × (n-2) × ... × 1
 // Factorial of 0 is 1
 func Factorial(n int) int {
-    // Your code here
-    return 0
+	// Your code here
+	if n == 0 {
+		return 1
+	}
+	result := 1
+	for i := 1; i <= n; i++ {
+		result *= i
+	}
+	return result
 }
